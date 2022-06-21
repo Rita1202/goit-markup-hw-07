@@ -1,0 +1,33 @@
+.about-us {
+  padding-bottom: 0;
+}
+.about-us__list {
+  display: flex;
+}
+.about-us__item {
+  width: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.about-us__suptitle {
+  @include font(14px, 700, 1.14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-light);
+}
+
+.about-us__section-description {
+  @include font(14px, 400, 1.71);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.about-us__icon-container {
+  @include flexCentered;
+  height: 120px;
+  background-color: var(--theme-dark-background);
+  margin-bottom: 30px;
+}
